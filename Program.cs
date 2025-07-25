@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
+// aspnetcore lib to handle websockets
 app.UseWebSockets();
 
 app.Map("/ws", async context =>
